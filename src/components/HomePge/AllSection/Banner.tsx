@@ -1,15 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import arrow from "../../../../Public/Logo/Arrow.png"
+import banner from "../../../../Public/Logo/banner.png"
 
 
 
 const Banner = () => {
     return (
         <div>
-
-            {/* Title Section */}
             <section className="">
+
+                {/* Image section */}
+                <div className="grid justify-center p-4">
+                    <Image
+                        className=""
+                        src={banner}
+                        alt="icon 1"
+                        // width={30}
+                        // height={38}
+                        priority
+                    />
+                </div>
+
+                {/* Title Section */}
                 <div className="mx-auto max-w-screen-xl  lg:flex  lg:items-center">
                     <div className="mx-auto  text-center">
                         <h1 className="text-6xl manrope font-extrabold text-[#212121] sm:text-5xl">
