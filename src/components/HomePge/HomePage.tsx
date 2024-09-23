@@ -1,5 +1,6 @@
 import Navbar from "../Shared/Navbar";
 import Banner from "./AllSection/Banner";
+import Blog from "./AllSection/Blog";
 
 
 
@@ -15,6 +16,11 @@ const HomePage = () => {
             {/* Banner Section */}
             <div>
                 <Banner></Banner>
+            </div>
+
+            {/* Bloge Section */}
+            <div>
+                <Blog></Blog>
             </div>
 
         </div>
