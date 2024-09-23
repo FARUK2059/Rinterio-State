@@ -5,6 +5,7 @@ import React from 'react';
 import icon1 from "../../../Public/Logo/Frame 7.png"
 import icon2 from "../../../Public/Logo/Frame 6.png"
 import Link from 'next/link';
+// import  "./style.css";
 
 const Navbar: React.FC = () => {
     return (
@@ -29,32 +30,32 @@ const Navbar: React.FC = () => {
                         <nav aria-label="Global">
                             <ul className="flex items-center gap-6 text-sm">
                                 <li>
-                                    <Link className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                                    <Link className="text-gray-800 font-bold  inline-block transition  hover:text-gray-500/75" href="#">
                                         Home
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                                    <Link className="text-gray-800 font-bold transition hover:text-gray-500/75" href="#">
                                         Service
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                                    <Link className="text-gray-800 font-bold transition hover:text-gray-500/75" href="#">
                                         Portfolio
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                                    <Link className="text-gray-800 font-bold transition hover:text-gray-500/75" href="#">
                                         Blogs
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                                    <Link className="text-gray-800 font-bold transition hover:text-gray-500/75" href="#">
                                         Contact Us
                                     </Link>
                                 </li>
 
-                                
+
                             </ul>
                         </nav>
                     </div>
@@ -78,19 +79,39 @@ const Navbar: React.FC = () => {
                         </div>
 
                         <div className="block md:hidden">
-                            <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="size-5"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                >
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                                </svg>
+                            <button className="rounded p-2 text-gray-600 transition hover:text-gray-600/75">
+                                <div className="dropdown">
+                                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="size-5"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                        >
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                                        </svg>
+                                    </div>
+                                    <ul
+                                        tabIndex={0}
+                                        className="menu menu-sm dropdown-content dropdown-end right-1 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                                    >
+                                        <li><a>Item 1</a></li>
+                                        <li>
+                                            <a>Parent</a>
+                                            <ul className="p-2">
+                                                <li><a>Submenu 1</a></li>
+                                                <li><a>Submenu 2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a>Item 3</a></li>
+                                    </ul>
+                                </div>
                             </button>
                         </div>
+
+
                     </div>
                 </div>
             </div>
