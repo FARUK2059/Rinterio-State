@@ -8,6 +8,32 @@ import Link from 'next/link';
 // import  "./style.css";
 
 const Navbar: React.FC = () => {
+
+    const navItems: { title: string; path: string }[] = [
+        {
+            title: 'Home',
+            path: '/',
+        },
+        {
+            title: 'Service',
+            path: '/aboutus',
+        },
+        {
+            title: 'Portfolio',
+            path: '/AllShoe',
+        },
+        {
+            title: 'Blogs',
+            path: '/blog',
+        },
+        {
+            title: 'Contacts Us',
+            path: '/contact-us',
+        }
+    ];
+
+
+
     return (
         <header className="p-2">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -29,32 +55,16 @@ const Navbar: React.FC = () => {
                     <div className="hidden md:block">
                         <nav aria-label="Global">
                             <ul className="flex items-center gap-6 text-sm">
-                                <li>
-                                    <Link className="text-gray-800 font-bold  inline-block transition  hover:text-gray-500/75" href="#">
-                                        Home
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link className="text-gray-800 font-bold transition hover:text-gray-500/75" href="#">
-                                        Service
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link className="text-gray-800 font-bold transition hover:text-gray-500/75" href="#">
-                                        Portfolio
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link className="text-gray-800 font-bold transition hover:text-gray-500/75" href="#">
-                                        Blogs
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link className="text-gray-800 font-bold transition hover:text-gray-500/75" href="#">
-                                        Contact Us
-                                    </Link>
-                                </li>
-
+                                {navItems?.map((navItem) => (
+                                    <li key={navItem.path}>
+                                        <Link
+                                            className='text-gray-800 font-bold  inline-block transition  hover:text-gray-500/75'
+                                            href={navItem.path}
+                                        >
+                                            {navItem.title}
+                                        </Link>
+                                    </li>
+                                ))}
 
                             </ul>
                         </nav>
@@ -97,15 +107,16 @@ const Navbar: React.FC = () => {
                                         tabIndex={0}
                                         className="menu menu-sm dropdown-content dropdown-end right-1 rounded-box z-[1] mt-3 w-52 p-2 shadow"
                                     >
-                                        <li><a>Item 1</a></li>
-                                        <li>
-                                            <a>Parent</a>
-                                            <ul className="p-2">
-                                                <li><a>Submenu 1</a></li>
-                                                <li><a>Submenu 2</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a>Item 3</a></li>
+                                        {navItems?.map((navItem) => (
+                                            <li key={navItem.path}>
+                                                <Link
+                                                    className='text-gray-800 font-bold  inline-block transition  hover:text-gray-500/75'
+                                                    href={navItem.path}
+                                                >
+                                                    {navItem.title}
+                                                </Link>
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                             </button>
