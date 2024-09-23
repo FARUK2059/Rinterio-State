@@ -2,6 +2,7 @@ import Image from "next/image";
 import victor from "../../../../Public/Logo/Vector.png"
 import rectangle from "../../../../Public/Logo/Rectangle.png"
 import aboutus from "../../../../Public/Logo/AboutUs.png"
+import commmersial from "../../../../Public/Logo//commercial.png"
 
 
 const Blog = () => {
@@ -26,14 +27,15 @@ const Blog = () => {
                         <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
                             <Image
                                 alt=""
-                                width={300}
-                                height={300}
+                                // width={300}
+                                // height={300}
                                 src={rectangle}
-                                className="absolute inset-0 h-full w-full object-cover"
+                                className=""
                             />
                         </div>
 
-                        <div className="lg:py-24">
+                        <div className=" mb-4">
+
                             <div>
                                 <button className="bg-white rounded-full p-2">
                                     <Image
@@ -45,6 +47,7 @@ const Blog = () => {
                                     />
                                 </button>
                             </div>
+
                             <h2 className="text-5xl manrope font-extrabold text-[#212121] sm:text-5xl mt-2">We design thoughtful, liveable spaces</h2>
 
                             <p className="mt-4 text-[#494949] sm:text-xl/relaxed">
@@ -52,12 +55,34 @@ const Blog = () => {
                                 modern sophistication, featuring weathered wood, sleek metal accents.
                             </p>
 
-                            <a
-                                href="#"
-                                className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
-                            >
-                                Get Started Today
-                            </a>
+                            <div className="mt-4 bg-white rounded-md flex gap-4 p-6">
+                                <Image
+                                    alt=""
+                                    // width={50}
+                                    // height={300}
+                                    src={commmersial}
+                                    className=""
+                                />
+                                <div>
+                                    <h2 className="text-[#494949] font-bold ">Commercial</h2>
+                                    <p className="text-[#737373] mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
+                                </div>
+                            </div>
+
+                            <div className="mt-4 bg-white rounded-md flex gap-4 p-6">
+                                <Image
+                                    alt=""
+                                    // width={50}
+                                    // height={300}
+                                    src={commmersial}
+                                    className=""
+                                />
+                                <div>
+                                    <h2 className="text-[#494949] font-bold ">Commercial</h2>
+                                    <p className="text-[#737373] mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
