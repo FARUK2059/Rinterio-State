@@ -28,7 +28,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <main className="lg:w-[90%]  m-auto bg-gradient-to-r from-[#FFFFFF] to-[#ffffffd9] min-h-screen">
+          {children}
+        </main>
       </body>
     </html>
   );
