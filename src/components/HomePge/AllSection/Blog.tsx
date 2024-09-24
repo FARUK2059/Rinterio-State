@@ -21,10 +21,11 @@ const Blog = () => {
                         priority
                     />
                 </div>
-
+                
+                {/* Commercial Section */}
                 <div className="mx-auto w-[90%] ">
                     <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-                        <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+                        <div className="relative  overflow-hidden rounded-lg  lg:order-last">
                             <Image
                                 alt=""
                                 // width={300}
@@ -34,7 +35,7 @@ const Blog = () => {
                             />
                         </div>
 
-                        <div className=" mb-4">
+                        <div className=" mb-4 container ">
 
                             <div>
                                 <button className="bg-white rounded-full p-2">
@@ -78,7 +79,7 @@ const Blog = () => {
                                     className=""
                                 />
                                 <div>
-                                    <h2 className="text-[#494949] font-bold ">Commercial</h2>
+                                    <h2 className="text-[#494949] font-bold ">Residential</h2>
                                     <p className="text-[#737373] mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
                                 </div>
                             </div>
@@ -86,6 +87,8 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
+
+
             </section>
         </div>
     );
