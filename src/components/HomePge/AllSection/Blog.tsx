@@ -160,7 +160,6 @@ const Blog = () => {
                     </dl>
                 </div>
 
-
             </section>
         </div>
     );

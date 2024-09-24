@@ -1,6 +1,7 @@
 import Navbar from "../Shared/Navbar";
 import Banner from "./AllSection/Banner";
 import Blog from "./AllSection/Blog";
+import Footer from "./AllSection/Footer";
 import State from "./AllSection/State";
 
 
@@ -8,7 +9,7 @@ import State from "./AllSection/State";
 const HomePage = () => {
     return (
         <div>
-            
+
             {/* Nevbar section */}
             <div>
                 <Navbar></Navbar>
@@ -27,6 +28,11 @@ const HomePage = () => {
             {/* State Section */}
             <div>
                 <State></State>
+            </div>
+
+            {/* Fotter Secction */}
+            <div>
+                <Footer></Footer>
             </div>
 
         </div>
