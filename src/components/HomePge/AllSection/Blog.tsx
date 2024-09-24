@@ -7,6 +7,15 @@ import comment from "../../../../Public/Logo/comment-01.png"
 import department from "../../../../Public/Logo/departement.png"
 import group from "../../../../Public/Logo/Group 8.png"
 import user1 from "../../../../Public/Logo/user-multiple.png"
+import work from "../../../../Public/Logo/Frame 14.png"
+import Concept from "../../../../Public/Logo/concept.png"
+import flowchart from "../../../../Public/Logo/flow-chart.png"
+import vison from "../../../../Public/Logo/vision.png"
+import buged from "../../../../Public/Logo/budget-planning.png"
+
+
+import Link from "next/link";
+
 
 
 const Blog = () => {
@@ -158,6 +167,126 @@ const Blog = () => {
                         </div>
 
                     </dl>
+                </div>
+
+                {/* Blog Section */}
+                <div>
+                    <section className="">
+                        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+
+                            <div className="mx-auto max-w-lg text-center">
+                                {/* Ring Section */}
+                                <div className="p-2 ml-4 grid justify-center items-cente ">
+                                    <Image
+                                        className=""
+                                        src={work}
+                                        alt="icon 1"
+                                        // width={30}
+                                        // height={38}
+                                        priority
+                                    />
+                                </div>
+                                <h2 className="text-6xl font-extrabold sm:text-4xl text-[#212121] ">Our Works Process</h2>
+
+                                <p className="mt-4  text-black">
+                                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                                </p>
+                            </div>
+
+                            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
+
+                                <Link
+                                    className="block bg-[#E7C1D3] rounded-xl border hover:border-gray-800 p-8 shadow-xl transition border-pink-500/10 "
+                                    href="#"
+                                >
+                                    <div className="  ">
+                                        <Image
+                                            className=""
+                                            src={Concept}
+                                            alt="icon 1"
+                                            // width={30}
+                                            // height={38}
+                                            priority
+                                        />
+                                    </div>
+
+                                    <h2 className="mt-4 text-xl text-[#212121] font-bold ">Concept</h2>
+
+                                    <p className="mt-1 text-sm text-[#737373] ">
+                                        The barn house captivates with its blend of rustic charm and modern.
+                                    </p>
+                                </Link>
+
+                                <Link
+                                    className="block bg-[#EFDA6E] rounded-xl border hover:border-gray-800 p-8 shadow-xl transition border-pink-500/10 "
+                                    href="#"
+                                >
+                                    <div className="  ">
+                                        <Image
+                                            className=""
+                                            src={flowchart}
+                                            alt="icon 1"
+                                            // width={30}
+                                            // height={38}
+                                            priority
+                                        />
+                                    </div>
+
+                                    <h2 className="mt-4 text-xl text-[#212121] font-bold ">Design Process</h2>
+
+                                    <p className="mt-1 text-sm text-[#737373] ">
+                                        The barn house captivates with its blend of rustic charm and modern.
+                                    </p>
+                                </Link>
+
+                                <Link
+                                    className="block bg-[#A4DA77] rounded-xl border hover:border-gray-800 p-8 shadow-xl transition border-pink-500/10 "
+                                    href="#"
+                                >
+                                    <div className="  ">
+                                        <Image
+                                            className=""
+                                            src={vison}
+                                            alt="icon 1"
+                                            // width={30}
+                                            // height={38}
+                                            priority
+                                        />
+                                    </div>
+
+                                    <h2 className="mt-4 text-xl text-[#212121] font-bold ">Supervision</h2>
+
+                                    <p className="mt-1 text-sm text-[#737373] ">
+                                        The barn house captivates with its blend of rustic charm and modern.
+                                    </p>
+                                </Link>
+
+                                <Link
+                                    className="block bg-[#77AAEA] rounded-xl border hover:border-gray-800 p-8 shadow-xl transition border-pink-500/10 "
+                                    href="#"
+                                >
+                                    <div className="  ">
+                                        <Image
+                                            className=""
+                                            src={buged}
+                                            alt="icon 1"
+                                            // width={30}
+                                            // height={38}
+                                            priority
+                                        />
+                                    </div>
+
+                                    <h2 className="mt-4 text-xl text-[#212121] font-bold ">Budget Planning</h2>
+
+                                    <p className="mt-1 text-sm text-[#737373] ">
+                                        The barn house captivates with its blend of rustic charm and modern.
+                                    </p>
+                                </Link>
+
+
+                            </div>
+                        </div>
+                    </section>
                 </div>
 
             </section>
